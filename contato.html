@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Felipe Rodrigues Motta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header>
+    <div class="container-header">
+      <nav aria-label="Menu principal">
+        <a class="btn-nav" href="index.html">
+          <span class="icone">👤</span>
+          Sobre mim
+        </a>
+        <a class="btn-nav" href="formacao.html">
+          <span class="icone">🎓</span>
+          Formação
+        </a>
+        <a class="btn-nav" href="portfolio.html">
+          <span class="icone">⌘</span>
+          Portfólio
+        </a>
+        <a class="btn-nav ativo" href="contato.html">
+          <span class="icone">✉</span>
+          Contato
+        </a>
+      </nav>
+
+      <button class="btn-tema" type="button" aria-label="Alternar tema" title="Alternar tema">Claro</button>
+    </div>
+  </header>
+
+  <main>
+    <article class="card-conteudo">
+      <section>
+        <div class="titulo-com-acao">
+          <h1 class="titulo-pagina">Contato Direto</h1>
+          <button class="btn-copiar" type="button">Copiar</button>
+        </div>
+        <div class="divisor"></div>
+
+        <div class="email-bloco">
+          <a class="email-texto" href="mailto:admxdurangokid@hotmail.com">admxdurangokid@hotmail.com</a>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="campo">
+            <label for="name">Nome Completo</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name">
+            <span class="msg-erro" id="name-error"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@email.com" autocomplete="email">
+            <span class="msg-erro" id="email-error"></span>
+          </div>
+
+          <div class="campo">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="3" placeholder="Sua mensagem..."></textarea>
+            <span class="msg-erro" id="message-error"></span>
+          </div>
+
+          <button class="btn-enviar" type="submit">Enviar Mensagem</button>
+        </form>
+
+        <div class="sucesso-alert" id="form-status" role="status" aria-live="polite"></div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Felipe Rodrigues Motta • RU 4944671</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
